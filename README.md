@@ -51,4 +51,6 @@ PBI DAX skills used in my dashboard:
 - SUM, AVERAGE, DISTINCTCOUNT
 - SUMX, AVERAGEX, RANKX, COUNTX
 - CALCULATE, ALL, RELATED, DIVIDE
-- DAX measures such as: 
+- DAX measures created are listed in the Measures table in the schema.
+
+
