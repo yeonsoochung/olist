@@ -46,3 +46,9 @@ Below is my data schema after loading the views into PBI and modeling the data.
 
 ![image](https://github.com/yeonsoochung/olist/assets/90481059/67d19f3b-dd77-41e3-bfa8-be44db74306b)
 
+PBI DAX skills used in my dashboard:
+
+- SUM, AVERAGE, DISTINCTCOUNT
+- SUMX, AVERAGEX, RANKX, COUNTX
+- CALCULATE, ALL, RELATED, DIVIDE
+- DAX measures such as: 
