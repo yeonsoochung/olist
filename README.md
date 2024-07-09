@@ -1,8 +1,32 @@
-This project demonstrates my SQL and Power BI (PBI) skills, including data modeling and DAX. I apply these skills on Kaggle's Olist dataset, which is real-life data provided by Olist, a Brazilian e-commerce company.
+This project demonstrates my SQL and Power BI (PBI) skills, including SQL transformations and querying; and data modeling and DAX. I apply these skills on Kaggle's Olist dataset, which is a set of real-life data on almost 100,000 transactions provided by Olist, a Brazilian e-commerce company.
 
 Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
-A major assumption I make in this project is that Olist earns revenue from 10% of all order transaction.
+A major assumption I make in this project is that Olist earns revenue from 10% of all order transaction. This is how I define "Revenue" in my PBI dashboard.
+
+The data schema in the Kaggle page has some many-to-many relationships, such as between the geolocation and customers tables, so I transformed the original data to achieve a star schema with only one-to-many relationships. Below is my data model.
+
+![image](https://github.com/yeonsoochung/olist/assets/90481059/dea4d0fb-92f2-46c8-a76c-4af6017113d4)
+
+To create this data model, I imported the original tables into Postgres, and then I applied SQL transformations and queries to create views, which were loaded into PBI.
+
+Before I describe the tables and views, I list the skills and techniques applied in this project.
+
+SQL code in olist_scipt.sql:
+- View creations
+- Inner and left joins
+- Aggregate group by & having; and order by function
+- Common Table Expressions (CTE's)
+- Window function
+
+PBI DAX:
+
+- SUM, AVERAGE, DISTINCTCOUNT
+- SUMX, AVERAGEX, RANKX, COUNTX
+- CALCULATE, ALL, RELATED, DIVIDE
+- DAX measures created are listed in the Measures table in the data schema image above.
+
+## Tables
 
 After creating a new "olist" database in Postgres, the Kaggle csv files were imported to Postgres as the following tables:
 
@@ -16,7 +40,9 @@ After creating a new "olist" database in Postgres, the Kaggle csv files were imp
 - products: data on each product. I used the product_id column as the primary key. I used only the product_category column (elements are in Portuguese) in this project.
 - sellers: seller data including city/state data.
 
-I then created the following views with SQL code. Some of them are intermediate views used to create final views that ultimately get loaded into PBI.
+## Views
+
+I created the following views with SQL. Some of them are intermediate views used to create views that get loaded into PBI.
 
 - products_eng: joined products table with the translation table.
 - zip_code_coords: aggregated geolocation table's zip code prefixes. There were duplicate zip codes with different coordinates, so this view aggregates zip codes by averaging the coordinates.
@@ -41,10 +67,6 @@ SQL skills applied in olist_scipt.sql:
 - Common Table Expressions (CTE's)
 - Window function
 - Created series of dates
-
-Below is my data schema after loading the views into PBI and modeling the data.
-
-![image](https://github.com/yeonsoochung/olist/assets/90481059/dea4d0fb-92f2-46c8-a76c-4af6017113d4)
 
 PBI DAX skills used in my dashboard:
 
