@@ -67,23 +67,22 @@ I created the following views with SQL. Some of them are intermediate views used
 ## Insights
 Page 1: Sales-I
 This page can answer questions such as:
-•	What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?
-•	Which seller states/cities generate the most revenue?
-•	What is the trend in revenue from the most profitable product categories?
-o	This data can guide advertising and marketing decisions by city. For example, clicking on Sao Paulo in the bar plot for top 10 customer cities updates the products revenue line chart. At the latest date, we can see that health & beauty products are most profitable, so I would recommend Olist to release ads in Sao Paulo featuring health & beauty products along with bed/bath/table and sports products. This can be done for other top cities, and control-clicking multiple customer cities will plot aggregated data in the visuals.
-•	Who are the most profitable/active sellers? Clicking on their bar plot columns can provide more details on their revenue over time, types of products sold, and which of the top cities their customers were located.
-o	If one of these sellers has a decrease in activity, Olist can consider offering them incentives (e.g., Olist takes a lower percentage of their transactions for a limited time) to encourage more activity.
-o	We can see from the updated line charts that some sellers tend to focus on selling a specific category of product. This can also be considered in any special incentives.
+- What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?- Which seller states/cities generate the most revenue?
+- What is the trend in revenue from the most profitable product categories?
+  - This data can guide advertising and marketing decisions by city. For example, clicking on Sao Paulo in the bar plot for top 10 customer cities updates the products revenue line chart. At the latest date, we can see that health & beauty products are most profitable, so I would recommend Olist to release ads in Sao Paulo featuring health & beauty products along with bed/bath/table and sports products. This can be done for other top cities, and control-clicking multiple customer cities will plot aggregated data in the visuals.
+- Who are the most profitable/active sellers? Clicking on their bar plot columns can provide more details on their revenue over time, types of products sold, and which of the top cities their customers were located.
+  - If one of these sellers has a decrease in activity, Olist can consider offering them incentives (e.g., Olist takes a lower percentage of their transactions for a limited time) to encourage more activity.
+  - We can see from the updated line charts that some sellers tend to focus on selling a specific category of product. This can also be considered in any special incentives.
 
 Page 2: Sales-II
-•	How do the total revenues of the most profitable product types compare in different customer cities? Like in the previous page, temporal trends can be visualized.
-•	How do the total revenues generated from all customer cities compare? What are their temporal trends in terms of total revenue, top products’ revenues, and number of unique sellers that sold items to those cities?
-•	Which customer states/cities generate the most revenue?
-•	Among the customer states or cities that have low revenue, are there any with a high enough population such that they should be targeted with ads and marketing campaigns?
+- How do the total revenues of the most profitable product types compare in different customer cities? Like in the previous page, temporal trends can be visualized.
+- How do the total revenues generated from all customer cities compare? What are their temporal trends in terms of total revenue, top products’ revenues, and number of unique sellers that sold items to those cities?
+- Which customer states/cities generate the most revenue?
+- Among the customer states or cities that have low revenue, are there any with a high enough population such that they should be targeted with ads and marketing campaigns?
 
 Page 3: Reviews
-•	How are sellers’ ratings trending (overall and by region)?
-•	Lower ratings will mean customers are less likely to buy from them, resulting in less revenue for Olist. Thus, cities or sellers whose monthly average ratings are declining or underperforming (e.g., less than a score of 4.0) should prompt scrutiny. Perhaps some kind of reward can be offered to the best performing sellers.
+- How are sellers’ ratings trending (overall and by region)?
+- Lower ratings will mean customers are less likely to buy from them, resulting in less revenue for Olist. Thus, cities or sellers whose monthly average ratings are declining or underperforming (e.g., less than a score of 4.0) should prompt scrutiny. Perhaps some kind of reward can be offered to the best performing sellers.
 
 
 
