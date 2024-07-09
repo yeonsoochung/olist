@@ -44,7 +44,7 @@ SQL skills applied in olist_scipt.sql:
 
 Below is my data schema after loading the views into PBI and modeling the data.
 
-![image](https://github.com/yeonsoochung/olist/assets/90481059/67d19f3b-dd77-41e3-bfa8-be44db74306b)
+![image](https://github.com/yeonsoochung/olist/assets/90481059/dea4d0fb-92f2-46c8-a76c-4af6017113d4)
 
 PBI DAX skills used in my dashboard:
 
