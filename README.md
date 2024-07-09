@@ -65,7 +65,8 @@ I created the following views with SQL. Some of them are intermediate views used
 - calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
 
 ## Insights
-Page 1: Sales-I
+### Page 1: Sales-I
+
 This page can answer questions such as:
 - What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?- Which seller states/cities generate the most revenue?
 - What is the trend in revenue from the most profitable product categories?
@@ -74,13 +75,13 @@ This page can answer questions such as:
   - If one of these sellers has a decrease in activity, Olist can consider offering them incentives (e.g., Olist takes a lower percentage of their transactions for a limited time) to encourage more activity.
   - We can see from the updated line charts that some sellers tend to focus on selling a specific category of product. This can also be considered in any special incentives.
 
-Page 2: Sales-II
+### Page 2: Sales-II
 - How do the total revenues of the most profitable product types compare in different customer cities? Like in the previous page, temporal trends can be visualized.
 - How do the total revenues generated from all customer cities compare? What are their temporal trends in terms of total revenue, top products’ revenues, and number of unique sellers that sold items to those cities?
 - Which customer states/cities generate the most revenue?
 - Among the customer states or cities that have low revenue, are there any with a high enough population such that they should be targeted with ads and marketing campaigns?
 
-Page 3: Reviews
+### Page 3: Reviews
 - How are sellers’ ratings trending (overall and by region)?
 - Lower ratings will mean customers are less likely to buy from them, resulting in less revenue for Olist. Thus, cities or sellers whose monthly average ratings are declining or underperforming (e.g., less than a score of 4.0) should prompt scrutiny. Perhaps some kind of reward can be offered to the best performing sellers.
 
