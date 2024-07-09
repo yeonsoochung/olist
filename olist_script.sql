@@ -316,11 +316,6 @@ as (
 	from sellers
 );
 
-select * from customers_view;
-select * from reviewed_sellers_view;
-select distinct ("Seller City", "Seller State") from reviewed_sellers_view;
-select distinct "Seller City" from reviewed_sellers_view order by "Seller City";
-
 
 /**
 Create view for calendar_view
@@ -338,4 +333,3 @@ from orders_view ov, products p, product_category_name_translation pt
 where ov."Product ID" = p.product_id and p.product_category_name = pt.product_category_name
 group by pt.product_category_name_english
 order by count desc;
-
