@@ -27,4 +27,9 @@ I then created the following views with SQL code. Some of them are intermediate 
 - order_items_view: essentially made the order_items table into a view. A new column of price*0.1 is added to calculate revenue (10% of all transactions).
 - orders_view: joins orders_base_view, order_customers, and order_items_view. Its columns are Order ID, Customer ID, Customer uniqID, Seller ID, Order Item ID, Product ID, Item Revenue, Order Status, Order Purchase Date, and Order Approval Date.
 - order_reviews_view: joined select data from order_reviews table and orders_view view. I found that the order_reviews dataset contains some duplicate order ID's due to some customers updating their reviews, so I applied a transformation to have only the latest review for each order. This view contains order ID, customer uniqID, seller ID, review score, and review timestamp for all reviewed orders.
-- 
+- rolling_sales_view: this view computes the rolling sum of sales for each seller using a window function. I ended up not using this view but kept it as demo.
+- order_payments_view: converted order_payments table into a view. I did not use this in my PBI dashboard.
+- customers_view: converted customers table to this view.
+- reviewed_sellers_view: converted sellers table to this view. In my PBI data model, this has a one-to-many relationship with order_reviews_view.
+- ordered_sellers_view: same data as reviewed_sellers_view. I created this view to make it have a direct one-to-many relationship with orders_view. I chose to model my data as such to make some of my visualizations render.
+- calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
