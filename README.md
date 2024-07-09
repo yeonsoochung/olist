@@ -33,3 +33,7 @@ I then created the following views with SQL code. Some of them are intermediate 
 - reviewed_sellers_view: converted sellers table to this view. In my PBI data model, this has a one-to-many relationship with order_reviews_view.
 - ordered_sellers_view: same data as reviewed_sellers_view. I created this view to make it have a direct one-to-many relationship with orders_view. I chose to model my data as such to make some of my visualizations render.
 - calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
+
+After loading my views into PBI and modeling the data, below is the resulting data schema.
+
+![image](https://github.com/yeonsoochung/olist/assets/90481059/67d19f3b-dd77-41e3-bfa8-be44db74306b)
