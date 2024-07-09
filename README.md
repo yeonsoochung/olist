@@ -13,7 +13,7 @@ After creating a new "olist" database in Postgres, the Kaggle csv files were imp
 - order_reviews: reviews left by customers on their orders; not all orders were reviewed. I focus on the review scores, which takes values {1, 2, 3, 4, 5}, more than the review comments.
 - orders: data on the orders made. This forms the basis of my fact table.
 - product_category_name_translation: contains English translations of each product category.
-- products: data on each product. I used the product_id column as the primary key. I used only the product_category column in this project.
+- products: data on each product. I used the product_id column as the primary key. I used only the product_category column (elements are in Portuguese) in this project.
 - sellers: seller data including city/state data.
 
 I then created the following views with SQL code. Some of them are intermediate views used to create final views that ultimately get loaded into PBI.
@@ -34,6 +34,15 @@ I then created the following views with SQL code. Some of them are intermediate 
 - ordered_sellers_view: same data as reviewed_sellers_view. I created this view to make it have a direct one-to-many relationship with orders_view. I chose to model my data as such to make some of my visualizations render.
 - calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
 
-After loading my views into PBI and modeling the data, below is the resulting data schema.
+SQL skills applied in olist_scipt.sql:
+- View creations
+- Inner and left joins
+- Aggregate group by & having; and order by function
+- Common Table Expressions (CTE's)
+- Window function
+- Created series of dates
+
+Below is my data schema after loading the views into PBI and modeling the data.
 
 ![image](https://github.com/yeonsoochung/olist/assets/90481059/67d19f3b-dd77-41e3-bfa8-be44db74306b)
+
