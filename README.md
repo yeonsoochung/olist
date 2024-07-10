@@ -4,7 +4,7 @@ This project demonstrates my SQL and Power BI (PBI) skills, including SQL transf
 
 Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
-A major assumption I make in this project is that Olist earns revenue from 10% of all order transaction. This is how I define "Revenue" in my PBI dashboard.
+In this projecrt, I assume that Olist earns revenue from 10% of all order transaction. This is how I define "Revenue" in my PBI dashboard. I am aware that just using the original transaction data would reveal the same patterns, but I wanted to add a further touch of reality to this project.
 
 The data schema in the Kaggle page has some many-to-many relationships, such as between the geolocation and customers tables, so I transformed the original data to achieve a star schema with only one-to-many relationships. Below is my data model.
 
