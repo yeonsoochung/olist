@@ -1,4 +1,4 @@
-# Analysis of e-Commerce Data with SQL and Power BI
+# Analysis of E-Commerce Data with SQL and Power BI
 
 This project demonstrates my SQL and Power BI (PBI) skills, including SQL transformations and querying; and data modeling and DAX. I apply these skills on Kaggle's Olist dataset, which is a set of real-life data on almost 100,000 transactions provided by Olist, a Brazilian e-commerce company.
 
