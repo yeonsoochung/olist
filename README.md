@@ -68,6 +68,8 @@ I created the following views with SQL. Some of them are intermediate views used
 ## Power BI Insights
 ### Page 1: Sales Analysis - Sellers
 
+![image](https://github.com/yeonsoochung/olist/assets/90481059/10e57533-f829-4a4e-a74b-8c54f515d5c4)
+
 Page 1 of my PBI dashboard can answer questions such as:
 - What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?
   - Both of these variables are on an upward trend. Total sales have plateaued over the last 4 or so months, however.
@@ -79,6 +81,9 @@ Page 1 of my PBI dashboard can answer questions such as:
 
 
 ### Page 2: Sales Analysis - Customers
+
+![image](https://github.com/yeonsoochung/olist/assets/90481059/cbe92eb0-bae7-4807-90a7-d27b72b2cf29)
+
 - How do the total revenues generated from all customer cities compare? What are their temporal trends in terms of total revenue and top products’ revenues?
 - Which customer states/cities generate the most revenue?
 - In Page 1, I decided to have a visual of the most profitable sellers; here, I have a visual of the most profitable customer cities. I thought that seller cities would not be as informative in Page 1; likewise, I did not think that the most profitable customers (of which there are over 94,000) would be as informative as aggregating revenue by their cities.
@@ -87,6 +92,9 @@ Page 1 of my PBI dashboard can answer questions such as:
 - Among the customer states or cities that have low revenue, are there any with a high enough population such that they should be targeted with ads and marketing campaigns?
 
 ### Page 3: Reviews
+
+![image](https://github.com/yeonsoochung/olist/assets/90481059/bde3bb7b-dd5e-4922-9091-57f61f3a765f)
+
 - How are sellers’ ratings trending (overall and by region)?
 - Lower ratings will mean customers are less likely to buy from such sellers, resulting in less revenue for Olist. Thus, active sellers whose overall average ratings are underperforming (e.g., less than a score of 3.8) should prompt scrutiny. The “Average Review Score Trends of Select Sellers” line chart allows the user to view and compare the temporal trends of such sellers by selecting them in the “Latest Average Review Score of Potentially Low-Score Active Sellers” visual.
 
