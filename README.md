@@ -8,7 +8,7 @@ In this project, I assume that Olist earns revenue from 10% of all order transac
 
 The data schema in the Kaggle page has some many-to-many relationships, such as between the geolocation and customers tables, so I transformed the original data to achieve a star schema with only one-to-many relationships. Below is my data model.
 
-![image](https://github.com/yeonsoochung/olist/assets/90481059/dea4d0fb-92f2-46c8-a76c-4af6017113d4)
+![image](https://github.com/yeonsoochung/olist/assets/90481059/548f77f8-9234-4295-8982-02b4c9b6c473)
 
 To create this data model, I imported the original tables into Postgres, and then I applied SQL transformations and queries to create views, which were loaded into PBI.
 
