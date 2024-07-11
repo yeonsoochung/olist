@@ -88,10 +88,10 @@ Page 1 of my PBI dashboard can answer questions such as:
 - What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?
   - Both of these variables are on an upward trend. Total sales have plateaued over the last 4 or so months, however.
 - Which seller states/cities generate the most revenue? How do their revenues trend over time? How do the trends break down by product types?
-  - By clicking on some of the sellers’ bars in the “Top 10 Most Profitable Sellers” visual, we can see from one of the line charts that certain sellers tend to focus on selling a specific category of product. This can be considered in any special incentives or rewards.
+  - By clicking on some of the sellers’ bars in the “Top 10 Most Profitable Sellers” visual, we can see from the "Revenue of Top Product Categories" visual that certain sellers tend to focus on selling a specific category of product. This can be considered in any special incentives or rewards.
 - What are the trends in revenue from the most profitable product categories? How does the trend of each category compare over time?
-- Who are the most profitable/active sellers? Clicking on their bar plot columns can provide more details on their revenue over time, types of products sold, and which of the top cities their customers were located.
-  -If one of these sellers has a decrease in activity, Olist can consider offering them incentives (e.g., Olist takes a lower percentage of their transactions for a limited time) to encourage more activity. If such a seller specialized in selling a certain product type, this could be included in the incentive.
+- Who are the most profitable/active sellers? Clicking on their bar plot columns can provide more details on their revenue over time and types of products sold.
+  -If one of these sellers has a decline in sales for a period of time, Olist can consider offering them incentives (e.g., Olist takes a lower percentage of their transactions for a limited time) to encourage more activity. If such a seller specialized in selling a certain product type, this could be included in the incentive.
 
 
 ### Page 2: Sales Analysis - Customers
@@ -99,10 +99,10 @@ Page 1 of my PBI dashboard can answer questions such as:
 ![image](https://github.com/yeonsoochung/olist/assets/90481059/cbe92eb0-bae7-4807-90a7-d27b72b2cf29)
 
 - How do the total revenues generated from all customer cities compare? What are their temporal trends in terms of total revenue and top products’ revenues?
-- Which customer states/cities generate the most revenue?
-- In Page 1, I decided to have a visual of the most profitable sellers; here, I have a visual of the most profitable customer cities. I thought that seller cities would not be as informative in Page 1; likewise, I did not think that the most profitable customers (of which there are over 94,000) would be as informative as aggregating revenue by their cities.
+- Which customer states/cities generated the most revenue?
+- In Page 1, I decided to have a visual of the most profitable sellers; here, I have a visual of the most profitable customer cities. I thought that seller cities would not be as informative in Page 1; likewise, I did not think that the most profitable customers (there are over 94,000 unique customers) would be as informative as aggregating revenue by their cities.
 - What are the temporal trends in revenue from the most profitable product categories for different customer cities?
-  - This data can guide advertising and marketing decisions by city. For example, clicking on the city of Sao Paulo in the bar plot for top 5 customer cities (or any state or city from the matrix) updates the products revenue line chart. At the latest date, we can see that health & beauty products are most profitable, so I would recommend Olist to release ads in Sao Paulo featuring health & beauty products along with bed/bath/table and sports products. This can be done for other cities; and control-clicking multiple customer cities will plot multiple trends.
+  - This data can guide advertising and marketing decisions by city. For example, clicking on the city of Sao Paulo in the bar plot for top 5 customer cities (or any state or city from the matrix) updates the products revenue line chart. At the most recent month, we can see that health & beauty products are most profitable, so I would recommend Olist to release ads in Sao Paulo featuring health & beauty products along with bed/bath/table and sports products. This can be done for other cities; and control-clicking multiple customer cities will plot multiple trends.
 - Among the customer states or cities that have low revenue, are there any with a high enough population such that they should be targeted with ads and marketing campaigns?
 
 ### Page 3: Reviews
