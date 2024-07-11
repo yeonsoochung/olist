@@ -89,9 +89,5 @@ Page 1 of my PBI dashboard can answer questions such as:
 ### Page 3: Reviews
 - How are sellers’ ratings trending (overall and by region)?
 - Lower ratings will mean customers are less likely to buy from such sellers, resulting in less revenue for Olist. Thus, active sellers whose overall average ratings are underperforming (e.g., less than a score of 3.8) should prompt scrutiny. The “Average Review Score Trends of Select Sellers” line chart allows the user to view and compare the temporal trends of such sellers by selecting them in the “Latest Average Review Score of Potentially Low-Score Active Sellers” visual.
-- If this were a live report, all of these visuals (in every page) would be updating.
-
-
-
 
 
