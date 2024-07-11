@@ -28,7 +28,7 @@ PBI DAX:
 - MAX, SUM, AVERAGE, DISTINCTCOUNT
 - SUMX, AVERAGEX, RANKX, COUNTX
 - CALCULATE, ALL, RELATED, DIVIDE
-- A calculated column was created in the calendar table. I used this to filter out the last week of sales data because it only had a few data points, so, without this filter, the temporal line charts woult show a steep drop at the end.
+- A calculated column was created in the calendar table. I used this to filter out the last week of sales data because it only had a few data points, so, without this filter, the temporal line charts would show a steep drop at the end.
 - DAX measures created are listed in the Measures table in the data schema image above.
 
 ## Tables
