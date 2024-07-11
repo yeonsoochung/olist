@@ -65,10 +65,10 @@ I created the following views with SQL. Some of them are intermediate views used
 - ordered_sellers_view: same data as reviewed_sellers_view. I created this view to make it have a direct one-to-many relationship with orders_view. I chose to model my data as such to make some of my visualizations render.
 - calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
 
-## Insights
+## Power BI Insights
 ### Page 1: Sales Analysis - Sellers
 
-This page can answer questions such as:
+Page 1 of my PBI dashboard can answer questions such as:
 - What is the trend of total sales revenue, which is equivalent to 10% of total transactions? The trend of the number of unique sellers on Olist?
   - Both of these variables are on an upward trend. Total sales have plateaued over the last 4 or so months, however.
 - Which seller states/cities generate the most revenue? How do their revenues trend over time? How do the trends break down by product types?
