@@ -47,9 +47,11 @@ After creating a new "olist" database in Postgres, the Kaggle csv files were imp
 
 ## Views
 
-I created the following views with SQL. Some of them are intermediate views used to create views that get loaded into PBI.
+I created the following views with SQL. Some of them are intermediate views used to create views that get loaded into PBI. The ones that were used in my data model have several of their rows pictured.
 
 - products_eng: joined products table with the translation table.
+![image](https://github.com/user-attachments/assets/2b16d48d-5074-4d7a-b9de-17a9b0f8e080)
+
 - zip_code_coords: aggregated geolocation table's zip code prefixes. There were duplicate zip codes with different coordinates, so this view aggregates zip codes by averaging the coordinates.
 - orders_base_view: joined orders table with customers table. Specific columns were selected to build a later view.
 - order_customers: joins orders table with customers table. Specific columns were selected to build a later view.
@@ -57,13 +59,25 @@ I created the following views with SQL. Some of them are intermediate views used
 - order_distances: multiple joins and a mathematical formula applied, resulting in a view that contains each distinct order_id and the distance between its seller and customer. I did not end up using this in my PBI dashboard but leaving this for demonstration.
 - order_items_view: essentially made the order_items table into a view. A new column of price*0.1 is added to calculate revenue (10% of all transactions).
 - orders_view: joins orders_base_view, order_customers, and order_items_view. Its columns are Order ID, Customer ID, Customer uniqID, Seller ID, Order Item ID, Product ID, Item Revenue, Order Status, Order Purchase Date, and Order Approval Date.
+![image](https://github.com/user-attachments/assets/6a6beed3-7d41-4765-86f4-54591f65d70c)
+
 - order_reviews_view: joined select data from order_reviews table and orders_view view. I found that the order_reviews dataset contains some duplicate order ID's due to some customers updating their reviews, so I applied a transformation to have only the latest review for each order. This view contains order ID, customer uniqID, seller ID, review score, and review timestamp for all reviewed orders.
+![image](https://github.com/user-attachments/assets/2f76298f-7cc0-4ffb-807c-1e725b47e224)
+
 - rolling_sales_view: this view computes the rolling sum of sales for each seller using a window function. I ended up not using this view but kept it as demo.
 - order_payments_view: converted order_payments table into a view. I did not use this in my PBI dashboard.
 - customers_view: converted customers table to this view.
+![image](https://github.com/user-attachments/assets/2e974129-abfc-4370-b9a3-9b27f1315f2f)
+
 - reviewed_sellers_view: converted sellers table to this view. In my PBI data model, this has a one-to-many relationship with order_reviews_view.
+![image](https://github.com/user-attachments/assets/230fe674-a55e-479d-9905-2a8b7dea667f)
+
 - ordered_sellers_view: same data as reviewed_sellers_view. I created this view to make it have a direct one-to-many relationship with orders_view. I chose to model my data as such to make some of my visualizations render.
+![image](https://github.com/user-attachments/assets/3cac220a-39a0-4d01-84c4-87a91d93f52c)
+
 - calendars_view: generated a series of dates from 2016-01-01 to 2018-12-31 to create a dates view for my data model and dashboard.
+![image](https://github.com/user-attachments/assets/896fa287-ce9a-4e71-8455-2d6bc320fbce)
+
 
 ## Power BI Insights
 ### Page 1: Sales Analysis - Sellers
